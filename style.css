@@ -1,0 +1,131 @@
+body{
+margin: 0px;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 30px;
+    background-color: white;
+    margin: auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+    margin-left: auto;
+    margin-right: 20px;
+  }
+  
+  li {
+    float: right;
+    border-radius: 10px;
+    background-color: #6B0EFC;
+    margin-left: 20px;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #5612c4;
+    border-radius: 10px;
+  }
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: row; 
+  background: linear-gradient(to left, #7BEFDF, #B7F8E0);
+  border: 1px #5612c4 solid;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+img{
+  margin: auto;
+  margin-right: 0px;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  max-width: 300px;
+  max-height: 300px;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+.quote{
+float: left;
+margin-right: auto;
+margin-top: 15%;
+margin-bottom: 5%;
+}
+
+.references{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 100px;
+  margin: 2%;
+  margin-bottom: 10%;
+  align-items: center;
+  justify-content: center;
+}
+.btn{
+  width: 60px;
+  border-radius: 10px;
+  background-color: #6B0EFC;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  margin: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .szolg {
+        grid-area: 1 / span 6;
+    }
+    .portfolio 
+    {grid-area: 2 / span 6;
+    }
+    .kapcsolat {
+        grid-area: 3 / span 6;
+    }
+  }
+  
+  @media only screen and (min-width: 600px) {
+    .szolg {
+        grid-area: 1 / span 6;
+    }
+    .portfolio 
+    {grid-area: 2 / span 6;
+    }
+    .kapcsolat {
+        grid-area: 3 / span 6;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .szolg {
+        grid-area: 1 / span 6;
+    }
+    .portfolio 
+    {grid-area: 2 / span 6;
+    }
+    .kapcsolat {
+        grid-area: 3 / span 6;
+    }
+  }

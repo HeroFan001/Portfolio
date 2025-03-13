@@ -1,0 +1,52 @@
+[
+	{
+		"id": "1",
+		"title": "Flex",
+		"photo_url": "https://res.cloudinary.com/dksuwj92i/image/upload/v1740729439/47111638-af3b-4212-9ef6-eafae6f45fe1.png",
+		"repo-link": "https://github.com/HeroFan001/flex",
+		"topics": [
+			"CSS"
+		],
+		"site-link": "https://github.com/HeroFan001/flex.git"
+	},
+	{
+		"id": "2",
+		"title": "Profil",
+		"photo_url": "https://res.cloudinary.com/dksuwj92i/image/upload/v1740729883/1522db70-b57d-4bfa-9889-0d98da43f5fc.png",
+		"repo-link": "https://github.com/HeroFan001/profil.git",
+		"topics": [
+			"Spread operator"
+		],
+		"site-link": "..."
+	},
+	{
+		"id": "3",
+		"title": "Viragok",
+		"photo_url": "https://res.cloudinary.com/dksuwj92i/image/upload/v1740729920/929686a2-5764-4ec2-a115-146f9f5f0f86.png",
+		"repo-link": "https://github.com/HeroFan001/viragok.git",
+		"topics": [
+			"JavaScript"
+		],
+		"site-link": "..."
+	},
+	{
+		"id": "4",
+		"title": "Ingatlanok",
+		"photo_url": "https://res.cloudinary.com/dksuwj92i/image/upload/v1740730003/0a9b9b0f-8a09-4cf9-adf1-0f9b2bb5e23d.png",
+		"repo-link": "https://github.com/HeroFan001/ingatlanok.git",
+		"topics": [
+			"Logika"
+		],
+		"site-link": "..."
+	},
+	{
+		"id": "5",
+		"title": "Lista",
+		"photo_url": "https://res.cloudinary.com/dksuwj92i/image/upload/v1740730285/6f803028-b1f8-4d8a-85b2-1fa1d2e060dd.png",
+		"repo-link": "https://github.com/HeroFan001/lista.git",
+		"topics": [
+			"gyumolcsok"
+		],
+		"site-link": "..."
+	}
+]
