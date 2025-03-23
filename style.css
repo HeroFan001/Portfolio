@@ -1,6 +1,11 @@
+html{
+ scroll-behavior: smooth;
+  }
+
 body{
 margin: 0px;
-background: url('background.png') fixed repeat;
+background: url("background.png") fixed;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 nav{
@@ -10,8 +15,9 @@ nav{
     min-height: 50px;
     background-color: white;
     margin: auto;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: fixed;
 }
 
 .logo{
@@ -19,9 +25,12 @@ nav{
   justify-content: center;
   text-align:center;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: #5612c4;
-  width: 40px;
+  background-color: #6c0ffd;
+  color: white;
+  width: 50px;
+  border-radius: 50%;
   padding-top: 10px;
+  margin-left: 20px;
   font-size: 30px;
 }
 
@@ -37,23 +46,23 @@ nav ul {
   
   nav li {
     float: right;
-    border-radius: 10px;
-    background-color: #6B0EFC;
+    border-radius: 50px;
     margin-left: 20px;
   }
   
   nav li a {
     height: 20px;
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 16px;
     text-decoration: none;
+    border-left: #5612c4 2px solid;
   }
   
   nav li a:hover {
-    background-color: #5612c4;
-    border-radius: 10px;
+    background-color: rgb(206, 206, 206);
+    border-radius: 50px;
   }
 
 .container{
@@ -63,18 +72,15 @@ nav ul {
 
 section{
   display: flex;
-  flex-wrap: wrap;
   width: 100%;
+  flex-wrap: wrap;
   flex-direction: row; 
-  background: url('background.png') fixed repeat;
-  border: 1px #5612c4 solid;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .profile{
   margin: auto;
   margin-right: 0px;
-  margin-top: 10%;
+  margin-top: 11%;
   margin-bottom: 5%;
   max-width: 300px;
   max-height: 300px;
@@ -87,21 +93,22 @@ float: left;
 margin-right: auto;
 margin-top: 15%;
 height: 100px;
-margin-bottom: 5%;
-background-color:#6B0EFC;
+margin-bottom: 10%;
 color: white;
+background-color: #6c0ffd;
 }
 
 .name{
   margin-bottom: 0px;
+  color: white;
 }
-
 
 blockquote{
   border-left: white 3px solid;
   width: 60%;
-  float: right;
-  text-align: end;
+  margin-left: 10px;
+  padding-left: 10px;
+  background-color: #6c0ffd;
 }
 
 .references{
@@ -116,9 +123,9 @@ blockquote{
 }
 .btn{
   width: 80px;
-  border-radius: 10px;
-  background-color: #6B0EFC;
-  color: white;
+  border-radius: 50px;
+  background-color: white;
+  color: #6c0ffd;
   border: white 1px solid;
   text-align: center;
   padding: 16px;
@@ -126,37 +133,229 @@ blockquote{
   margin: 10px;
 }
 
+.btn:hover{
+  background-color: #560cce;
+  background-color: rgb(204, 204, 204);
+}
+
+.aboutContainer {
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.rolam {
+  width: 50%;
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: left;
+}
+.h1Rolam {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+.about {
+  font-size: 1.2em;
+  line-height: 1.6;
+  text-align: justify;
+}
+
 .munkak{
   display: flex;
   flex-wrap: wrap;
+  background: white;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  border: 2px solid #6c0ffd;
+  border-radius: 20px;
+  padding: 20px;
+  margin: auto;
+  margin-top: 40px;
+  background: white;
+  width: 80%;
+  height: 400px;
+}
+
+.project img {
+  width: auto;
+  height: 400px;
+  margin-right: 20px;
+  border-radius: 20px;
+}
+
+.projectDetails {
+  flex-grow: 1;
+}
+
+.projectTitle {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #6c0ffd;
+  border-bottom: #6c0ffd 1px solid;
+}
+
+.projectLinks {
+  margin-top: 10px;
+}
+
+.projectLinks a {
+  margin-right: 10px;
+  color: #6c0ffd;
+  text-decoration: underline;
+  float: right;
+}
+
+.projectLinks a:hover {
+  text-decoration: underline;
+}
+
+.ezAszoveg{
+  width: 100%;
+  height: 20px;
+  font-size: 21px;
 
 }
 
-.projects{
-display: flex;
-flex-wrap: wrap;
-background-color: white;
-margin: auto;
-margin-top:3%;
-border: 10px white solid;
-height: 600px;
-width: 1400px;
+.footer {
+  width: 100%;
+  background-color: #222;
+  color: white;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contactInfo, .contactForm, .map {
+  max-width: 300px;
+  margin: 10px;
 }
 
-.project_img{
-  height: 500px;
-  width: 800px;
-  margin-right: 10%;
+.contactInfo{
+  margin: auto;
+  margin-right: 20px;
 }
 
-.temak{
+
+
+.contactForm input, .contactForm textarea {
+  width: 60%;
+  padding: 10px;
+  margin: 5px 0;
   margin-left: 20px;
-  margin-right: 100px;
+  border: #222 1px solid;
+  border-radius: 5px;
 }
 
-.kapcsolat{
-  margin-top: 5%;
-  height: 500px;
-  background-color: cyan;
+.contactForm{
+  background-color: white;
+  border-radius: 5px;
+  color: #222 ;
 }
+
+.contactForm p{
+  color: blue;
+  margin-left: 20px;
+}
+
+.contactForm button {
+  width: 60%;
+  padding: 10px;
+  background: blue;
+  color: white;
+  border: 1px black solid;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.contactForm button:hover {
+  background: rgb(0, 0, 80);
+  color: rgb(255, 255, 255);
+
+}
+
+.map{
+  margin: auto;
+  margin-left: 20px;
+}
+
+.map iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  nav{
+    height: 40px;
+    margin: none;
+  }
+  nav ul{
+    width: 70%;
+    margin: none;
+    margin-left: 10%;
+    margin-right: 0px;
+    padding: none;
+  }
+  nav ul li{
+    flex-wrap: nowrap;
+    width: 30%;
+    margin: none;
+    margin-left: 5px;
+    margin-right: 0px;
+    padding: none;
+  }
+  nav ul li a{
+    height: 20px;
+    width: 70%;
+    margin: none;
+    padding: none;
+  }
+
+  .profile{
+    margin: auto;
+    margin-top: 100px;
+  }
+
+  .rolam {
+    width: 90%;
+    padding: 20px;
+  }
+  .project {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .project img {
+    width: 100%;
+    height: 60%;
+    margin-bottom: 10px;
+  }
+  .rolam {
+    width: 90%;
+    padding: 20px;
+}
+.h1Rolam {
+  display: none;
+}
+
+.contactForm, .contactInfo,.map{
+  margin: auto;
+  margin-top: 20px;
+}
+
+}
+
+  
+
 

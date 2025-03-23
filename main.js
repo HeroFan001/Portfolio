@@ -6,16 +6,17 @@ function renderData(data){
     console.log(data)
     data.forEach(element => {
         document.querySelector(".munkak").innerHTML+=`
-        <div class="projects">
-            <div class="kep1">
-                <img src="${element.photo_url}" alt="" class="project_img">
+        </div>
+         <div class="project">
+        <img src="${element.photo_url}" alt="">
+        <div class="projectDetails">
+            <div class="projectTitle">${element.title}</div>
+            <p>Témakörök:</p>
+             <ul class="topics">${renderTopics(element.topics)}</ul>
+            <div class="projectLinks">
+                <a href="${element.repo_link}">Github link</a>
+                <a href="${element.site_link}">Weboldal link</a>
             </div>
-         <div class="temak">
-                <h1 class="title">${element.title}</h1>
-                <ul class="topics">${renderTopics(element.topics)}</ul>
-                <p class="repo_link">${element.repo_link}</p>
-            </div>
-         
         </div>
          `
     });

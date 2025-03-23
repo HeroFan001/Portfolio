@@ -7,4 +7,4 @@ const getData=async (url,renderFn)=>{
         console.log(error);
         
     }
-}
+};
