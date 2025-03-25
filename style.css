@@ -344,18 +344,18 @@ blockquote{
   .rolam {
     width: 90%;
     padding: 20px;
-}
-.h1Rolam {
-  display: none;
-}
+ }
+ .h1Rolam {
+   display: none;
+ }
 
-.contactForm, .contactInfo,.map{
+ .contactForm, .contactInfo,.map{
   margin: auto;
   margin-top: 20px;
-}
-.aboutContainer{
- padding-top: 100px;
-}
+ }
+ .aboutContainer{
+ margin-top: 100px;
+ }
 
 }
 
